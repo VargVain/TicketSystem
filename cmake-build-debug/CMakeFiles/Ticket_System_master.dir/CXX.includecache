@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/wyc/Desktop/Ticket-System-master/Tickets.cpp
+Tickets.hpp
+/mnt/c/Users/wyc/Desktop/Ticket-System-master/Tickets.hpp
+
+/mnt/c/Users/wyc/Desktop/Ticket-System-master/Tickets.hpp
+iostream
+-
+string
+-
+map
+-
+set
+-
+mDataType.hpp
+/mnt/c/Users/wyc/Desktop/Ticket-System-master/mDataType.hpp
+
+/mnt/c/Users/wyc/Desktop/Ticket-System-master/mDataType.hpp
+string
+-
+iostream
+-
+cstring
+-
+
