@@ -7,13 +7,6 @@ int nextDay(int &day) {
     return day;
 }
 
-int nextDay_n(int day) {
-    if (day == 630) day = 701;
-    else if (day == 731) day = 801;
-    else ++day;
-    return day;
-}
-
 int nextDays(int &day, int len) {
     for (int i = 0; i < len; ++i) {
         nextDay(day);
@@ -23,9 +16,18 @@ int nextDays(int &day, int len) {
 
 int nextDays_n(int day, int len) {
     for (int i = 0; i < len; ++i) {
-        nextDay_n(day);
+        nextDay(day);
     }
     return day;
+}
+
+int passDays(int endDate, int startDate) {
+    if (endDate < startDate) return -1;
+    int passDays = 0;
+    while (endDate != startDate) {
+        nextDay(endDate);
+    }
+    return passDays;
 }
 
 std::string printDay(int day) {
@@ -49,4 +51,12 @@ int addTime(int &time, int len) {
     int hh = (h + m / 60) % 24;
     time = hh * 100 + mm;
     return (h + m / 60) / 24;
+}
+
+int hash(mString s) {
+unsigned long long h = 0;
+for (int i = 0; i < strlen(s._str); ++i) {
+    h = (h * 233 + s._str[i] + 1913) % 1913;
+}
+return (int)h;
 }

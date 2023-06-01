@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug"/>
+				<Option working_dir="/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Ticket_System_master">
-				<Option output="/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Ticket_System_master" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Ticket_System_master" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ticket_System_master"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ticket_System_master"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Ticket_System_master/fast">
-				<Option output="/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Ticket_System_master" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug"/>
+				<Option output="/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Ticket_System_master" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,35 +75,35 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ticket_System_master/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/mnt/c/Users/wyc/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 Ticket_System_master/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/c/Users/86186/Desktop/Ticket-System-master/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/c/Users/wyc/Desktop/Ticket-System-master/Tickets.cpp">
+		<Unit filename="/mnt/c/Users/86186/Desktop/Ticket-System-master/Tickets.cpp">
 			<Option target="Ticket_System_master"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/wyc/Desktop/Ticket-System-master/Tickets.hpp">
+		<Unit filename="/mnt/c/Users/86186/Desktop/Ticket-System-master/Tickets.hpp">
 			<Option target="Ticket_System_master"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/wyc/Desktop/Ticket-System-master/UserList.cpp">
+		<Unit filename="/mnt/c/Users/86186/Desktop/Ticket-System-master/UserList.cpp">
 			<Option target="Ticket_System_master"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/wyc/Desktop/Ticket-System-master/UserList.hpp">
+		<Unit filename="/mnt/c/Users/86186/Desktop/Ticket-System-master/UserList.hpp">
 			<Option target="Ticket_System_master"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/wyc/Desktop/Ticket-System-master/mDataType.cpp">
+		<Unit filename="/mnt/c/Users/86186/Desktop/Ticket-System-master/mDataType.cpp">
 			<Option target="Ticket_System_master"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/wyc/Desktop/Ticket-System-master/mDataType.hpp">
+		<Unit filename="/mnt/c/Users/86186/Desktop/Ticket-System-master/mDataType.hpp">
 			<Option target="Ticket_System_master"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/wyc/Desktop/Ticket-System-master/main.cpp">
+		<Unit filename="/mnt/c/Users/86186/Desktop/Ticket-System-master/main.cpp">
 			<Option target="Ticket_System_master"/>
 		</Unit>
-		<Unit filename="/mnt/c/Users/wyc/Desktop/Ticket-System-master/CMakeLists.txt">
+		<Unit filename="/mnt/c/Users/86186/Desktop/Ticket-System-master/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

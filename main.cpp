@@ -2,10 +2,12 @@
 #include <string>
 #include "UserList.hpp"
 #include "Tickets.hpp"
-#pragma execution_character_set("gbk");
 
 int main() {
-    //freopen("in.in", "r", stdin);
+    //std::ios::sync_with_stdio(0);
+    //std::cin.tie(0);
+    //std::cout.tie(0);
+    freopen("in.in", "r", stdin);
     //freopen("out.out", "w", stdout);
     std::string time, opt;
     UserList users;
@@ -49,10 +51,10 @@ int main() {
             tickets.buy_ticket(users);
         }
         else if (opt == "query_order") {
-            //TODO
+            tickets.query_order(users);
         }
         else if (opt == "refund_ticket") {
-            //TODO
+            tickets.refund_ticket(users);
         }
         else if (opt == "clean") {
             //TODO

@@ -6,11 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/wyc/Desktop/Ticket-System-master/Tickets.cpp
-Tickets.hpp
-/mnt/c/Users/wyc/Desktop/Ticket-System-master/Tickets.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/Query.hpp
+iostream
+-
+cstring
+-
+map
+-
+set
+-
+vector
+-
+mDataType.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/mDataType.hpp
 
-/mnt/c/Users/wyc/Desktop/Ticket-System-master/Tickets.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/Tickets.hpp
 iostream
 -
 string
@@ -20,13 +30,39 @@ map
 set
 -
 mDataType.hpp
-/mnt/c/Users/wyc/Desktop/Ticket-System-master/mDataType.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/mDataType.hpp
+UserList.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/UserList.hpp
+Query.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/Query.hpp
 
-/mnt/c/Users/wyc/Desktop/Ticket-System-master/mDataType.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/UserList.hpp
+iostream
+-
+string
+-
+map
+-
+set
+-
+mDataType.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/mDataType.hpp
+
+/mnt/c/Users/86186/Desktop/Ticket-System-master/mDataType.hpp
 string
 -
 iostream
 -
 cstring
 -
+
+/mnt/c/Users/86186/Desktop/Ticket-System-master/main.cpp
+iostream
+-
+string
+-
+UserList.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/UserList.hpp
+Tickets.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/Tickets.hpp
 

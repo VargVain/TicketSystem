@@ -42,16 +42,20 @@ struct mString {
 
 int nextDay(int &day);
 
-int nextDay_n(int day);
-
 int nextDays(int &day, int len);
 
 int nextDays_n(int day, int len);
+
+int passDays(int endDate, int startDate);
 
 std::string printDay(int day);
 
 std::string printTime(int time);
 
 int addTime(int &time, int len);
+
+int hash(mString s);
+
+static mString TrainID[200000], Place[200000];
 
 #endif //TICKET_SYSTEM_MASTER_MDATATYPE_HPP
