@@ -52,6 +52,7 @@ struct Stop {
         if (lhs.date < rhs.date) return true;
         if (lhs.date == rhs.date && lhs.st < rhs.st) return true;
         if (lhs.st == rhs.st && lhs.trainID < rhs.trainID) return true;
+        if (lhs.trainID == rhs.trainID) return true;
         return false;
     }
 };
@@ -72,7 +73,7 @@ public:
 
     void query_ticket();
 
-    void buy_ticket(UserList users);
+    void buy_ticket(UserList &users);
 
 private:
 
@@ -80,7 +81,7 @@ private:
 
     std::map<mString, Train> trainList;
 
-    std::map<Stop, int> seatList;
+    std::map<Stop, int> seatList; //线段树优化
 
     std::multimap<Trip, Query> tripList;
 };

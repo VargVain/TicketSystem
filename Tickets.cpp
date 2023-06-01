@@ -150,6 +150,12 @@ void Tickets::add_train() {
             train.totalPrice[i] = totalPrice;
         }
     }
+    for (int i = 1; i <= num; ++i) {
+        for (int k = train.saleDate[0]; k <= train.saleDate[1]; nextDay(k)) {
+            Stop stop = {train.trainID, i, nextDays_n(k, train.levDayPass[i])};
+            seatList[stop] = train.seatNum;
+        }
+    }
     trainList[train.trainID] = train;
     std::cout << 0;
 }
@@ -191,10 +197,6 @@ void Tickets::release_train() {
                                train.totalPrice[j] - train.totalPrice[i]};
                 tripList.insert(std::make_pair(trip, query));
             }
-        }
-        for (int k = st; k <= ed; nextDay(k)) {
-            Stop stop = {train.trainID, i, nextDays_n(k, train.levDayPass[i])};
-            seatList[stop] = train.seatNum;
         }
     }
     std::cout << 0;
@@ -309,12 +311,71 @@ void Tickets::query_ticket() {
     }
 }
 
-void Tickets::buy_ticket(UserList users) {
+void Tickets::buy_ticket(UserList &users) {
     std::string key, arg;
+    mString username, trainID, start, end;
+    int date, number;
     bool fail = false, queue = false;
     while (std::cin >> key >> arg) {
-        if (key == "-s") {
-
+        if (key == "-u") {
+            if (!users.loggedIn(arg)) fail = true;
+            else username = arg;
+        }
+        else if (key == "-i") {
+            if (trainList.find(arg) == trainList.end() || !trainList.find(arg)->second.released) fail = true;
+            else trainID = arg;
+        }
+        else if (key == "-d") {
+            std::string token;
+            token += arg[0];
+            token += arg[1];
+            token += arg[3];
+            token += arg[4];
+            date = atoi(token.c_str());
+        }
+        else if (key == "-n") {
+            number = atoi(arg.c_str());
+        }
+        else if (key == "-f") {
+            start = arg;
+        }
+        else if (key == "-t") {
+            end = arg;
+        }
+        else if (key == "-q") {
+            if (arg == "true") queue = true;
+        }
+        if (std::cin.get() == '\n') break;
+    }
+    if (fail) {
+        std::cout << -1;
+        return;
+    }
+    Train train = trainList.find(trainID)->second;
+    if (number > train.seatNum) {
+        std::cout << -1;
+        return;
+    }
+    Trip trip = {start, end, date};
+    auto range = tripList.equal_range(trip);
+    for (auto it = range.first; it != range.second; ++it) {
+        if (it->second.trainID == trainID) {
+            int st = it->second.st, ed = it->second.ed;
+            for (int i = st; i != ed; ++i) {
+                Stop stop = {trainID, i, nextDays(date, train.levDayPass[i] - train.levDayPass[st])};
+                int seatLeft = seatList.find(stop)->second;
+                if (number > seatLeft) fail = true;
+            }
+            else {
+                for (int i = st; i != ed; ++i) {
+                    Stop stop = {trainID, i, nextDays(date, train.levDayPass[i] - train.levDayPass[st])};
+                    int seatLeft = seatList.find(stop)->second;
+                    seatList.erase(stop);
+                    seatList[stop] = seatLeft - number;
+                }
+            }
+            break;
         }
     }
+    std::cout << -1;
 }

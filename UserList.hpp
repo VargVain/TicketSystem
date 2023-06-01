@@ -30,11 +30,11 @@ public:
 
     void exit();
 
-private:
-
     bool found(mString username);
 
     bool loggedIn(mString username);
+
+private:
 
     void print(User user);
 
