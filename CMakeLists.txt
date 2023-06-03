@@ -7,4 +7,5 @@ add_executable(Ticket_System_master
         main.cpp
         mDataType.cpp
         UserList.cpp
-        Tickets.cpp)
+        Tickets.cpp
+        Query.cpp)

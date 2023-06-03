@@ -20,6 +20,10 @@ vector
 mDataType.hpp
 /mnt/c/Users/86186/Desktop/Ticket-System-master/mDataType.hpp
 
+/mnt/c/Users/86186/Desktop/Ticket-System-master/Tickets.cpp
+Tickets.hpp
+/mnt/c/Users/86186/Desktop/Ticket-System-master/Tickets.hpp
+
 /mnt/c/Users/86186/Desktop/Ticket-System-master/Tickets.hpp
 iostream
 -
@@ -55,14 +59,6 @@ iostream
 -
 cstring
 -
-
-/mnt/c/Users/86186/Desktop/Ticket-System-master/main.cpp
-iostream
+map
 -
-string
--
-UserList.hpp
-/mnt/c/Users/86186/Desktop/Ticket-System-master/UserList.hpp
-Tickets.hpp
-/mnt/c/Users/86186/Desktop/Ticket-System-master/Tickets.hpp
 

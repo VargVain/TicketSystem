@@ -14,21 +14,33 @@ struct Info {
 
 struct Query1 {
     int start, end, date;
+
     friend bool operator<(const Query1 &lhs, const Query1 &rhs) {
         if (lhs.start < rhs.start) return true;
-        if (lhs.start == rhs.start && lhs.end < rhs.end) return true;
-        if (lhs.end == rhs.end && lhs.date < rhs.date) return true;
+        else if (lhs.start == rhs.start) {
+            if (lhs.end < rhs.end) return true;
+            else if (lhs.end == rhs.end) {
+                if (lhs.date < rhs.date) return true;
+            }
+        }
         return false;
     }
 };
 
 struct Query2 {
     int trainID, start, end, date;
+
     friend bool operator<(const Query2 &lhs, const Query2 &rhs) {
         if (lhs.start < rhs.start) return true;
-        if (lhs.start == rhs.start && lhs.end < rhs.end) return true;
-        if (lhs.end == rhs.end && lhs.date < rhs.date) return true;
-        if (lhs.date == rhs.date && lhs.trainID < rhs.trainID) return true;
+        else if (lhs.start == rhs.start) {
+            if (lhs.end < rhs.end) return true;
+            else if (lhs.end == rhs.end) {
+                if (lhs.date < rhs.date) return true;
+                else if (lhs.date == rhs.date) {
+                    if (lhs.trainID < rhs.trainID) return true;
+                }
+            }
+        }
         return false;
     }
 };
@@ -36,21 +48,21 @@ struct Query2 {
 class CmpTime {
 public:
     bool operator()(const Info &lhs, const Info &rhs) {
-        return lhs.totalTime < rhs.totalTime || ((lhs.totalTime == rhs.totalTime) && (lhs.trainID < rhs.trainID));
+        return lhs.totalTime < rhs.totalTime || ((lhs.totalTime == rhs.totalTime) && (TrainID[lhs.trainID] < TrainID[rhs.trainID]));
     }
 };
 
 class CmpCost {
 public:
     bool operator()(const Info &lhs, const Info &rhs) {
-        return lhs.totalCost < rhs.totalCost || ((lhs.totalCost == rhs.totalCost) && (lhs.trainID < rhs.trainID));
+        return lhs.totalCost < rhs.totalCost || ((lhs.totalCost == rhs.totalCost) && (TrainID[lhs.trainID] < TrainID[rhs.trainID]));
     }
 };
 
 struct QuerySeat { //线段树优化？感觉没啥必要
     int seat[128];
     void set(int stationNum, int n) {
-        for (int i = 1; i <= stationNum; ++i) {
+        for (int i = 1; i < stationNum; ++i) {
             seat[i] = n;
         }
     }
@@ -91,6 +103,14 @@ struct OrderInfo {
     }
 };
 
+struct Transfer {
+    int to, trainID;
+};
+
+bool CmpCostTransfer(const Info &lhs1, const Info &lhs2, const Info &rhs1, const Info &rhs2);
+
+bool CmpTimeTransfer(const Info &lhs1, const Info &lhs2, const Info &rhs1, const Info &rhs2);
+
 static std::multimap<Query1, Info> mQueryTicket;
 
 static std::map<Query2, Info> mBuyTicket;
@@ -101,6 +121,10 @@ static std::multimap<mString, int> mQueryOrder;
 
 static std::vector<OrderInfo> vQueryOrder;
 
-static QuerySeat mQuerySeat[200000];
+static QuerySeat mQuerySeat[1000000];
+
+static std::multimap<int, Transfer> mQueryTransfer;
+
+static std::vector<OrderInfo> ooo;
 
 #endif //TICKET_SYSTEM_MASTER_QUERY_HPP

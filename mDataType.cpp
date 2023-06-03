@@ -3,6 +3,7 @@
 int nextDay(int &day) {
     if (day == 630) day = 701;
     else if (day == 731) day = 801;
+    else if (day == 831) day = 901;
     else ++day;
     return day;
 }
@@ -23,9 +24,10 @@ int nextDays_n(int day, int len) {
 
 int passDays(int endDate, int startDate) {
     if (endDate < startDate) return -1;
-    int passDays = 0;
+    int passDays = 1;
     while (endDate != startDate) {
-        nextDay(endDate);
+        nextDay(startDate);
+        ++passDays;
     }
     return passDays;
 }
@@ -53,10 +55,32 @@ int addTime(int &time, int len) {
     return (h + m / 60) / 24;
 }
 
+int passTime(int dayEnd, int timeEnd, int dayStart, int timeStart) {
+    int d = passDays(dayEnd, dayStart);
+    int m = (timeEnd / 100 - timeStart / 100) * 60 + (timeEnd % 100 - timeStart % 100);
+    return d * 1440 + m;
+}
+/*
 int hash(mString s) {
 unsigned long long h = 0;
 for (int i = 0; i < strlen(s._str); ++i) {
-    h = (h * 233 + s._str[i] + 1913) % 1913;
+    h = (h * 237 + s._str[i] + 199799) % 199799;
 }
 return (int)h;
+}
+*/
+
+int hash(mString s) {
+    if (mNameList.find(s) == mNameList.end()) {
+        ++pos;
+        mNameList[s] = pos;
+        return pos;
+    }
+    else {
+        return mNameList.find(s)->second;
+    }
+}
+
+int getNo(int trainID, int trainNo) {
+    return trainID * 100 + trainNo;
 }

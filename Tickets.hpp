@@ -39,6 +39,10 @@ public:
 
     void refund_ticket(UserList &users);
 
+    void query_transfer();
+
+    void test();
+
 private:
 
     bool found(mString trainID);

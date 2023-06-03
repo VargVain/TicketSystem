@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/Ticket_System_master.dir/Query.cpp.o"
   "CMakeFiles/Ticket_System_master.dir/Tickets.cpp.o"
   "CMakeFiles/Ticket_System_master.dir/UserList.cpp.o"
   "CMakeFiles/Ticket_System_master.dir/mDataType.cpp.o"

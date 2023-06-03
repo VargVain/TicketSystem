@@ -1,1 +1,1 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/Ticket_System_master.dir/main.cpp.o CMakeFiles/Ticket_System_master.dir/mDataType.cpp.o CMakeFiles/Ticket_System_master.dir/UserList.cpp.o CMakeFiles/Ticket_System_master.dir/Tickets.cpp.o  -o Ticket_System_master 
+/usr/bin/c++  -g  -rdynamic CMakeFiles/Ticket_System_master.dir/main.cpp.o CMakeFiles/Ticket_System_master.dir/mDataType.cpp.o CMakeFiles/Ticket_System_master.dir/UserList.cpp.o CMakeFiles/Ticket_System_master.dir/Tickets.cpp.o CMakeFiles/Ticket_System_master.dir/Query.cpp.o  -o Ticket_System_master 

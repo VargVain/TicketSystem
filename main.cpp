@@ -2,18 +2,19 @@
 #include <string>
 #include "UserList.hpp"
 #include "Tickets.hpp"
+#pragma execution_character_set("gbk");
 
 int main() {
-    //std::ios::sync_with_stdio(0);
-    //std::cin.tie(0);
-    //std::cout.tie(0);
     freopen("in.in", "r", stdin);
-    //freopen("out.out", "w", stdout);
+    freopen("out.out", "w", stdout);
     std::string time, opt;
     UserList users;
     Tickets tickets;
     while (std::cin >> time >> opt) {
         std::cout << time << " ";
+        if (time == "[199563]") {
+            int a = 1;
+        }
         if (opt == "add_user") {
             users.add_user();
         }
@@ -45,7 +46,7 @@ int main() {
             tickets.query_ticket();
         }
         else if (opt == "query_transfer") {
-            //TODO
+            tickets.query_transfer();
         }
         else if (opt == "buy_ticket") {
             tickets.buy_ticket(users);
@@ -54,6 +55,8 @@ int main() {
             tickets.query_order(users);
         }
         else if (opt == "refund_ticket") {
+            //std::getline(std::cin, opt);
+            //continue;
             tickets.refund_ticket(users);
         }
         else if (opt == "clean") {
@@ -61,8 +64,11 @@ int main() {
         }
         else if (opt == "exit") {
             users.exit();
-            std::cout << '\n';
-            break;
+            //std::cout << '\n';
+            //break;
+        }
+        else if (opt == "test") {
+            tickets.test();
         }
         std::cout << '\n';
     }

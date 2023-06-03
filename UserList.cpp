@@ -34,7 +34,8 @@ void UserList::add_user() {
         else if (key == "-g") {
             user.privilege = atoi(arg.c_str());
         }
-        if (std::cin.get() == '\n') break;
+        char c = std::cin.get();
+        if (c == '\n' || c == '\r') break;
     }
     if (list.empty()) {
         cp = 11;
@@ -62,7 +63,8 @@ void UserList::login() {
         if (key == "-p") {
             password = arg;
         }
-        if (std::cin.get() == '\n') break;
+        char c = std::cin.get();
+        if (c == '\n' || c == '\r') break;
     }
     if (list.find(username)->second.password != password) fail = true;
     if (fail) {
@@ -104,7 +106,8 @@ void UserList::query_profile() {
                 user = list.find(arg)->second;
             }
         }
-        if (std::cin.get() == '\n') break;
+        char c = std::cin.get();
+        if (c == '\n' || c == '\r') break;
     }
     if (cp <= user.privilege && cu != user.username) fail = true;
     if (fail) {
@@ -152,7 +155,8 @@ void UserList::modify_profile() {
             privilege = atoi(arg.c_str());
             g = true;
         }
-        if (std::cin.get() == '\n') break;
+        char c = std::cin.get();
+        if (c == '\n' || c == '\r') break;
     }
     if ((cp <= user.privilege && cu != user.username) || cp <= privilege) fail = true;
     if (fail) {

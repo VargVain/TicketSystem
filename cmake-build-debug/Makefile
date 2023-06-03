@@ -123,6 +123,33 @@ Ticket_System_master/fast:
 	$(MAKE) -f CMakeFiles/Ticket_System_master.dir/build.make CMakeFiles/Ticket_System_master.dir/build
 .PHONY : Ticket_System_master/fast
 
+Query.o: Query.cpp.o
+
+.PHONY : Query.o
+
+# target to build an object file
+Query.cpp.o:
+	$(MAKE) -f CMakeFiles/Ticket_System_master.dir/build.make CMakeFiles/Ticket_System_master.dir/Query.cpp.o
+.PHONY : Query.cpp.o
+
+Query.i: Query.cpp.i
+
+.PHONY : Query.i
+
+# target to preprocess a source file
+Query.cpp.i:
+	$(MAKE) -f CMakeFiles/Ticket_System_master.dir/build.make CMakeFiles/Ticket_System_master.dir/Query.cpp.i
+.PHONY : Query.cpp.i
+
+Query.s: Query.cpp.s
+
+.PHONY : Query.s
+
+# target to generate assembly for a file
+Query.cpp.s:
+	$(MAKE) -f CMakeFiles/Ticket_System_master.dir/build.make CMakeFiles/Ticket_System_master.dir/Query.cpp.s
+.PHONY : Query.cpp.s
+
 Tickets.o: Tickets.cpp.o
 
 .PHONY : Tickets.o
@@ -240,6 +267,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Ticket_System_master"
+	@echo "... Query.o"
+	@echo "... Query.i"
+	@echo "... Query.s"
 	@echo "... Tickets.o"
 	@echo "... Tickets.i"
 	@echo "... Tickets.s"
